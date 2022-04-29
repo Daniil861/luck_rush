@@ -5,7 +5,7 @@
 	<title>Luck Rush - game</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
-	<link rel="stylesheet" href="css/style.min.css?_v=20220428191155">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220429124341">
 	<link rel="shortcut icon" href="favicon.ico">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, viewport-fit=cover">
 </head>
@@ -269,6 +269,7 @@
 					<div class="game__actions actions">
 						<div class="actions__body">
 							<div class="actions__inner">
+								<div class="actions__current-move"><span>current move:</span> <span class="actions__number">0</span></div>
 								<div class="actions__button-start">
 									<p>number</p>
 									<div class="actions__value">start</div>
@@ -289,8 +290,18 @@
 				</div>
 			</div>
 		</div>
+		<div class="wrapper__win win">
+			<div class="win__sub-text">You Win!</div>
+			<div class="win__sub-text win__multiple">x1</div>
+			<div class="win__text">0</div>
+			<div class="win__body">
+				<button type="button" class="win__button win__button_play button">
+					<p>Play again</p>
+				</button>
+			</div>
+		</div>
 	</div>
-	<script src="js/app.min.js?_v=20220428191155"></script>
+	<script src="js/app.min.js?_v=20220429124341"></script>
 </body>
 
 </html>
