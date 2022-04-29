@@ -284,8 +284,8 @@
     function check_level_5() {
         let arr = document.querySelectorAll(".ticket__item");
         let check = 0;
-        arr.forEach((el => {
-            if (0 == el.dataset.target) check = 1;
+        arr.forEach(((el, i) => {
+            if (i < 25 && 0 == el.dataset.target) check = 1;
         }));
         if (1 == check) return false; else {
             check_count_win_level_5();
